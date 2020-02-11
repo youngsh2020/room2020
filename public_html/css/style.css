@@ -1,8 +1,7 @@
 /* Youngshin Choi(991585731) */
 #area1 {
-    position: absolute;
-    top:80px;
-  
+   position: absolute;
+   top:80px;
    box-sizing: content-box;  
   width: 360px;
   height: 480px;
@@ -19,27 +18,29 @@
 }
 #msg{
     font-size: 20px;
+    padding:5px;
+    color:blue;
 } 
 
 body{
     font-size: 1.25em;
  }
-    input { 
+input { 
     font-weight: bold; margin-left: 5px; margin-top:20px;
 }
 label,legend{
-    font-weight:bold; color : navy;
+    font-weight:bold; color : blueviolet;
 }
 #submit{
     font-size:25px;
-    padding-left:30px;padding-right:30px;
-    color: red;
+    padding-left:40px; padding-right:30px;
+    color: green;
     text-align:center;
 }
 h1{
     font-weight:bold; color : rgb(180, 64, 10);
     text-align:center;
-    font-size:25px;
+    font-size:30px;
 }
 
 
