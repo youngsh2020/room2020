@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<!-- Youngshin Choi (991585731)-->
+<!-- get values from the form and generate a christmas card -->
+<html>
+    <head>
+    <title>A2</title>
+    <meta charset = "utf-8">
+    <link rel="stylesheet" href="css/style.css">
+    <script type="text/javascript" src="js/card.js"></script>
+    </head>  
+    <body>
+        <!-- make the form for input -->
+            <section id = "area1" >
+                   <form>          
+                    <h1>Greetings Card Generator</h1><br>
+                    <label> Recipient name<input name = "toName" id ="toName" type = "text"> </label> <br><br>
+                    <fieldset>
+                      <legend>Text Colour</legend>
+		      <input type="color" id ="textColor" name="textColor">
+                        &nbsp;&nbsp;Chose color for the text<br><br>
+                    </fieldset> 
+                    <fieldset>
+                        <legend>Select a Message </legend>
+                        <select id="msg">
+                            <option>Happy Holidays!</option>
+                            <option>Seasons Greetings!</option>
+                        </select><br><br>	
+                    </fieldset>
+                        
+                        <div> <input type="button" id ="submit" value="Generate Card"></div>
+                </form>
+              
+            </section>
+        <!-- output in canvas -->
+            <section id ="area2"  style ="visibility: hidden">                
+                
+                        <canvas id='cardCanvas' width='400' height='500' style='background-color:red;'> <canvas>
+                
+             </section>
+  		
+        
+    </body>
+    </html>
