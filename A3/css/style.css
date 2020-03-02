@@ -1,0 +1,32 @@
+/*-YoungshinChoi,studentNum.991585731*/
+body{
+
+     background-image:url("../images/leaves.jpg");
+     background-size: cover;
+
+}
+#pa{
+	font-size:300%;
+	color : yellow;	
+	text-align: center;
+}
+#message{
+	font-size:200%;
+	color:white;
+	text-shadow:pink 2px 2px;
+	text-align: center;
+
+}
+#butterfly{
+	position:absolute; 
+	width:300px; 
+	height:200px;
+	top:200px; 
+	left:400px;">
+}
+#frogs{
+	 position:absolute; 
+	 top:400px;
+	 left:200px;
+	
+}
