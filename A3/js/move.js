@@ -19,36 +19,14 @@ var frogs = document.getElementById("frogs");
 	 document.getElementById("message").innerHTML = msg;
  }
 
- //declare variables for animation    
-     var x = 100; 
-     var y = 50;     
-     var timerId;           
+ 
+//change the location of target character
+var b =  document.getElementById("butterfly");
+ b.addEventListener("mouseover", updateAnimation);
 
- // starts the animation
- function startAnimation() {
-                                     
-     timerId = setInterval(updateAnimation, 100);
-}
-
- // stops the animation
-function stopAnimation() {
-     clearTimeout(timerId);
-             
-               
-}
-//update animation
  function updateAnimation() {
-         x=x+3;
-                   
-        var butterfly =document.getElementById("butterfly");
-        window.onmouseover = function(e){              
-        butterfly.style.left = e.clientX+x+"px";
-        butterfly.style.top = e.clientY+y+"px";
-        }
-
-            if ( x >= window.innerWidth-100)
-            stopAnimation();
-}
-startAnimation();
-                   
+    
+       butterfly.style.left = (Math.random()*window.innerWidth -100)+"px";
+       butterfly.style.top = (Math.random()*window.innerHeight -100)+"px";   
+ }
 };
