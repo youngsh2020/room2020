@@ -8,11 +8,13 @@ body{
 #pa{
 	font-size:300%;
 	color : yellow;	
+	font-weight:bold;
 	text-align: center;
+	text-shadow:blue 1px 1px;
 }
 #message{
-	font-size:200%;
-	color:white;
+	font-size:250%;
+	color:red;
 	text-shadow:pink 2px 2px;
 	text-align: center;
 
