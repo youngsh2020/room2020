@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<!--
+name: Youngshin Choi(No.991585731)
+date: March 28. 2020
+App of ordering coffee for TimHortons(customer)
+-->
+<html>
+    <head>
+        <title>TimHortons</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <link rel="stylesheet" type="text/css" href="../css/style.css">
+    </head>
+    <body>
+        
+        <section class="section1">
+            <div class="top"><img src = "../image/logo.jpg" ></div>
+		<h1>Welcome to Tim Horton's!</h1>
+                <div class="form-wrap">
+          <form action="../timHortons.php" method="POST">
+              <p>Give us some numbers..</p>
+              <div class="form-field">
+              <label >Number of Coffees:</label>
+          	<input type="number" min="0" name ="number"><br>
+              </div>
+              <div class="form-field">
+                <label >Size:</label>
+<!--                 <select name="size" size ="4" >
+                     <option value="small">Small</option> 
+                     <option value="medium" >Medium</option>
+                      <option value="large" >Large</option>
+                       <option value="X-Large">X-Large</option>
+                 </select><br>-->
+                  <select name="size"  >
+                  
+                     <option value="small">Small</option> 
+                     <option value="medium" >Medium</option>
+                      <option value="large" >Large</option>
+                       <option value="X-Large">X-Large</option>
+                  </select><br>
+              </div>
+              <div class="form-field">
+                  
+            <label >How many creams?</label>
+          	<input type ="number" name="creams" min="0"><br>
+              </div>
+              <div class="form-field">
+                <label>How many sugars?</label>
+          	<input type ="number" name="sugars" min="0"><br>
+                
+              </div>
+              <div class="clear"></div>
+              <div class ="submit">
+            <input type="submit" value ="Order Coffee">
+              </div>
+        </form>
+                </div>
+        </section>
+        <br><br><br>
+        
+         <section class="section2">
+            
+		
+                <div class="form-wrap">
+          <form action="../timHortons.php" method="POST">
+              <p>Or use the slang!</p>
+              <div class="form-field1">
+                <div class="clear"></div>
+                <div id = "order">
+          	<input id ="number" type="number" min="0" name ="number">
+                 
+                 <select id="choice" name="size"  >
+                
+                  
+                     <option value="small">Small</option> 
+                     <option value="medium" >Medium</option>
+                      <option value="large" >Large</option>
+                       <option value="X-Large">X-Large</option>
+                  </select><br>
+                </div>
+                <div class="clear"></div>
+              </div>
+              <div class="form-field1">
+                  <div>
+                 <input type ="radio" value = "regular"  name="coffee">
+                 <label> Regular</label></div>
+                  <div>
+                 <input type ="radio" value = "double"  name="coffee">
+                 <label> Double Double</label></div>
+                  <div>
+                 <input type ="radio" value = "triple"  name="coffee">
+                 <label> Triple Triple</label></div>
+                  <div>
+                 <input type ="radio" value = "black"  name="coffee">
+                 <label> Black</label></div>
+                  <div>
+                 <input type ="radio" value = "black1"  name="coffee">
+                 <label> Black One Sugar</label></div>
+                  <div>
+                 <input type ="radio" value = "black2"  name="coffee">
+                 <label> Black Two Sugars</label></div>
+                  <div>
+                 <input type ="radio" value = "black3"  name="coffee">
+                 <label> Black Three Sugar</label></div>
+              </div>
+              <div class="clear"></div>
+             <div class="submit">
+            <input type="submit" value ="Order Coffee">
+          </div>
+        </form>
+                </div>
+        </section>
+    </body>
+</html>
