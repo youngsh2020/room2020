@@ -1,0 +1,67 @@
+/* 
+    Created on : Apr. 6, 2020, 6:53:10 p.m.
+    Author     : Youngshin
+*/
+
+body{
+    font-size: 20px;
+    font-family: sans-serif;
+}
+#fruit div{
+    border:5px solid black;
+    margin: 5px;
+    max-height: 300px;
+    max-width: 200px;
+}
+#fruit{
+ display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+#fruit div img{
+    width:150px;
+    height:150px;
+}
+#title{
+     font-size:40px;
+    text-align: center;
+    color:Purple;
+}
+#result{
+    font-size:30px;
+    text-align: center;
+    color:green;
+    
+}
+#comment{
+    color:royalblue;
+     text-align: center;
+}
+#submit{
+    width:150px;
+    font-size:30px;
+}
+#name{
+    float: left;
+    width:30%;
+    
+    margin-left:25%
+}
+#bet{
+    float:right;
+    width:30%;
+   
+    margin-right:15%;
+    
+}
+#clear{
+    clear:both;
+}
+#credit {
+   
+   margin-left:40%;
+  
+}
+p{
+    text-align: center;
+}
