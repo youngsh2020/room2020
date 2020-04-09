@@ -68,8 +68,7 @@ session_start();
               
               }
              
-          //   echo '<h1 id="comment"> You are super!! </h1>'. $_SESSION["name"];
-             
+                 
             }
             
                   ?>  
