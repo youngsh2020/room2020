@@ -36,10 +36,11 @@
              <label>Province</label>
               <select name="province">
                  <option value="ON">ON</option>
-                 <option value="QB">QB</option>
+                 <option value="QC">QC</option>
                  <option value="BC">BC</option>
                  <option value="NS">NS</option>
-                 <option value="NB">NB</option>     
+                 <option value="NB">NB</option>   
+                 <option value="AB">AB</option>
               </select><br>
              <label>Postal Code</label>
              <input type="text" name="postal" pattern ="[a-zA-Z][1-9][a-zA-Z][1-9][a-zA-Z][1-9]" title="format:f1f1f1" required>           
