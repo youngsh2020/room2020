@@ -1,0 +1,44 @@
+
+<!--Assignment 7, Creating Order form and get output in PHP
+Name: Youngshin Choi(April 12. 2020)-->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Personal Detail</title>
+        <meta charset="UTF-8">
+         <link rel="stylesheet" href="css/style.css">
+        <meta name="viewport" content="width=device-width">
+    </head>
+    <body>
+<!--        get Information from user-->
+        <form action="step2.php" method="POST">
+            <h1>Personal Information</h1><br>
+            <label>First Name:</label> <input type ="text" maxlength="50" required  name="fname"><br>
+            <label>Last Name :</label> <Input type="text" maxlength="50" required name="lname"><br>
+            <label>E-Mail:</label> <input type="email"  maxlength="50" required name="email"> <br>
+            <label>Date of Birth:</label> <input type="date" name="birth"> <br>
+            <label>Are you a runner?</label><br> 
+            <input id ="yes" type="checkbox" name="yes" value="yes">
+            <label>Yes</label>
+            <input id ="no" type="checkbox" name="no" value="no">
+            <label>No</label><br>
+            <label>What is your favourite terrain?</label>
+            <fieldset>      
+                        <input type = "radio" checked value = "Road" name="terrain">
+                        <label>Road </label><br>
+
+                        <input type = "radio" value = "Track" name="terrain">
+                        <label>Track </label><br>
+
+                        <input type = "radio" value = "Trail" name="terrain">
+                        <label>Trail </label><br>
+
+             </fieldset>
+             <label>How would you rate your current shoes?</label>
+             <input type ="number" min="1" max="10"  name="shoe" required><br>
+             <input type ="submit" name="submit"> 
+        </form>
+
+    </body>
+</html>
