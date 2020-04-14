@@ -13,6 +13,7 @@
     <body>
         <p id="final">Order successfully placed</p>
         <p id ="final">Thank you for your order</p>
+        <p id ="final">Press Home Page if want to go to the first page</p>
         
         <a href="step1.html"> Home Page</a>
          
