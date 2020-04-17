@@ -26,26 +26,22 @@
                     $execok = $stmt->execute($userParams);
                 
                     echo " <h1>Cities Selected </h1>"."<br>";
-                   // echo "<b>City Name       Country        Population</b> "."<br>";
-                      echo "<table>";
-                            echo "<tr>";
-                            echo "<th> City Name</th>";
-                            echo "<th> Country</th>";
-                            echo "<th>Population</th>";
-                            echo "</tr>";
-                           // echo "</table>";
+                     echo "<table>";
+                     echo "<tr>";
+                     echo "<th> City Name</th>";
+                     echo "<th> Country</th>";
+                     echo "<th>Population</th>";
+                     echo "</tr>";
+                    
                     if($execok){
                       while($row=$stmt->fetch()){
-                        
-                          // echo "<table>";
+                    
                             echo "<tr>
                             <td>" . $row[Name]."</td>
                             <td>" . $row[CountryCode]."</td>
                             <td>". $row[Population]. "</td>   
                             </tr>";
-                                                  
-                          
-                        // echo  $row[Name] ." ".$row[CountryCode]."".$row[Population] ."<br>" ;
+               
                       } echo "</table>" ;  
                       
                     }else{
