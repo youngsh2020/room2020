@@ -1,7 +1,7 @@
 <?php 
 
-  require("connect.php");
-    
+  session_start();
+  
 ?>
 <!--Youngshin Choi
     display a sorted list of world database-->
@@ -18,42 +18,15 @@
     <body>
 		<?php 
                
-                try{
-                    $dbConn = new PDO("mysql:host=localhost;dbname=chyoungs_Lesson11",$user,  $passwd);
-                    $command="SELECT * FROM City WHERE population>? AND population<? ORDER BY Population"  ;
-                    $stmt = $dbConn->prepare($command);
-                    $userParams = array("1000000","1050000");
-                    $execok = $stmt->execute($userParams);
-                
-                    echo " <h1>Cities Selected </h1>"."<br>";
-                     echo "<table>";
-                     echo "<tr>";
-                     echo "<th> City Name</th>";
-                     echo "<th> Country</th>";
-                     echo "<th>Population</th>";
-                     echo "</tr>";
-                    
-                    if($execok){
-                      while($row=$stmt->fetch()){
-                    
-                            echo "<tr>
-                            <td>" . $row[Name]."</td>
-                            <td>" . $row[CountryCode]."</td>
-                            <td>". $row[Population]. "</td>   
-                            </tr>";
-               
-                      } echo "</table>" ;  
-                      
-                    }else{
-                      
-                      echo "There are zero records";                   
-                  
-                    }
-                } catch (PDOException $e) {
-                    echo 'Connection error:' .$e->getMessage();
-
-                }
-         
+                  //input form
+                     echo '<form action="index2.php" method="GET">';
+                     echo " <label>Enter the minimum number</label>";
+                     echo '<input id ="min" type="number" name="min"><br><br>';
+                     echo " <label>Enter the maximum number</label>";
+                     echo '<input id ="max" type="number" name="max" ><br><br>';
+                     echo "<input type='submit' name='submit'><br>";
+                     echo'</form>';
+                 
         ?>
     </body>
 </html>

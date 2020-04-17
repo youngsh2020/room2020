@@ -1,0 +1,23 @@
+
+/* 
+    Created on : Apr. 12, 2020, 11:10:51 p.m.
+    Author     : Youngshin Choi
+*/
+
+h1{
+  color: blue; 
+     
+}
+th{
+    margin-right:10%;
+    color:blueviolet;
+}
+label{
+    color:green;
+    font-family: monospace;
+    font-size: 25px;
+}
+submit{
+    alignment-adjust: middle;
+}
+
